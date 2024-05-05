@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+body,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background-color: #3d3d3d;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+  margin: 5px;
+  padding: 5px, 10px;
+  background-color: #3d3d3d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li:hover {
+  background-color: rgb(37, 105, 105);
+}
+
+nav ul li a {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h2,
+p {
+  display: block;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #aaaaaa;
+  color: #1c1c1c;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: small;
+}
+
+button:hover {
+  background-color: rgb(37, 105, 105);
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #3e3e3e;
+  color: #dedede;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: medium;
+}
+.completeButton {
+  background-color: rgb(2, 83, 2);
+  color: #dedede;
+}
+.completeButton:hover {
+  background-color: rgb(2, 151, 2);
+}
+
+.removeButton {
+  background-color: rgb(111, 3, 3);
+  color: #dedede;
+}
+.removeButton:hover {
+  background-color: rgb(179, 4, 4);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  background-color: #e5e5e5;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+ul li span {
+  margin-right: 10px;
+}
+
+ul li button {
+  margin-left: 10px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.deadpool {
+  width: 400px;
+}
+
+.deadpoolAbout {
+  margin-top: 20px;
+  width: 700px;
+  border-radius: 10px;
 }
